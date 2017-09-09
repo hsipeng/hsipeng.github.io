@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="let life = undefined;">
+  <meta name="keyword" content="just coding.">
+  
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      javascript特效（知识点笔记） | DVRAW.
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>DVRAW.</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>javascript特效（知识点笔记）</h2>
+  <p class="post-date">2017-04-28</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><h2 id="javascript中常用坐标属性offset、scroll、client"><a href="#javascript中常用坐标属性offset、scroll、client" class="headerlink" title="javascript中常用坐标属性offset、scroll、client"></a>javascript中常用坐标属性offset、scroll、client</h2><p>offset、scroll、client是js中获取元素尺寸的api的三大家族。<br> <a id="more"></a><br><img src="http://images.cnitblog.com/blog/555524/201501/251833059254129.png" alt=""></p>
+<h3 id="1、在文档（document）对象里面用："><a href="#1、在文档（document）对象里面用：" class="headerlink" title="1、在文档（document）对象里面用："></a>1、在文档（document）对象里面用：</h3><p>scrollWidth/Height:获取对象的滚动宽度(滚动条可以滚动的宽度，相当于整个页面的总宽度的样子–网页正文全宽)</p>
+<p>scrollLeft/Top:设置或获取位于对象左边界和窗口中目前可见内容的最左端之间的距离（页面利用滚动条滚动到右边时，隐藏在滚动条左边的页面宽度—页面被卷去左边）</p>
+<h3 id="2、在节点对象里面用："><a href="#2、在节点对象里面用：" class="headerlink" title="2、在节点对象里面用："></a>2、在节点对象里面用：</h3><p>offsetLeft/Top:获取对象相对于版面（css里面没有进行定位，则offsetParent取值为根元素进行计算）或由 offsetParent 属性指定的父坐标的计算左侧位置（当有css定位时，当前对象相对与offsetParent元素的距离）</p>
+<p>offsetWidth/Height (width+padding+border)<br>获取当前对象的宽度。<br>style.width也是当前对象的宽度(width+padding+border)。<br>区别：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1)style.width返回值除了数字外还带有单位px；</div><div class="line">2)如对象的宽度设定值为百分比宽度,则无论页面变大还是变小，style.width都返回此百分比,而offsetWidth则返回在不同页面中对象的宽度值而不是百分比值；</div><div class="line">3)如果没有给 HTML 元素指定过 width样式，则 style.width 返回的是空字符串；</div></pre></td></tr></table></figure></p>
+<p>offsetLeft :<br>当前对象到其上级层左边的距离。<br>不能对其进行赋值.设置对象到其上级层左边的距离请用style.left属性。<br>style.left当前对象到其上级层左边的距离。<br>区别：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1)style.left返回值除了数字外还带有单位px；</div><div class="line">2)如对象到其上级层左边的距离设定值为百分比，style.left返回此百分比,而offsetLeft则返回到其上级层左边的距离的值；</div><div class="line">3)如果没有给 HTML 元素指定过 left样式，则 style.left返回的是空字符串；</div></pre></td></tr></table></figure></p>
+<p>注意：如果上级层为body，由于IE、FF对padding、margin的解释不一样所以要明确规定处理不是下列的区别就不成立了。<br>IE<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1)如果Div的上级层是body，而div与body之间有个div，如body-&gt;div-&gt;divo；divo的offsetTop=div的padding+margin+boder；</div><div class="line">2）如果Div的上级层是body，如body&gt;divo；divo的offsetTop=div的padding+margin+boder；</div></pre></td></tr></table></figure></p>
+<p>这divo的offsetTop=divo的margin &gt;body.padding则为divo的margin，否则为body.padding谁大是谁？FF  上述两种情况：offsetTop=margin+padding ;<br>(IE与FF中的body默认padding为10)在IE6.0 FF3.6.13</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">clientWidth/Height:</div><div class="line">获取对象可见内容的宽度，不包括滚动条，不包括边框；</div><div class="line"></div><div class="line">clientLeft/Top:</div><div class="line"> 获取对象的border宽度</div></pre></td></tr></table></figure>
+<h3 id="3、事件里面用的："><a href="#3、事件里面用的：" class="headerlink" title="3、事件里面用的："></a>3、事件里面用的：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">event.clientX 相对文档的水平座标</div><div class="line"></div><div class="line">event.clientY 相对文档的垂直座标</div><div class="line"></div><div class="line">event.offsetX 相对容器的水平坐标</div><div class="line">event.offsetY 相对容器的垂直坐标</div></pre></td></tr></table></figure>
+<p>4、屏幕的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">window.screenTop 网页正文部分上</div><div class="line">window.screenLfet 网页正文部分左</div><div class="line"></div><div class="line">window.screen.height  屏幕分辨律的高</div><div class="line">window.screen.left  屏幕分辨律的宽</div><div class="line"></div><div class="line">window.screen.availHeight  屏幕可用工作区的高度</div><div class="line">window.screen.availWidth  屏幕可用工作区的宽度</div><div class="line"></div><div class="line">document.documentElement.scrollTop 垂直方向滚动的值</div><div class="line"></div><div class="line"></div><div class="line">网页可见区域宽： document.body.clientWidth;</div><div class="line">网页可见区域高： document.body.clientHeight;</div><div class="line">网页可见区域宽： document.body.offsetWidth   (包括边线的宽);</div><div class="line">网页可见区域高： document.body.offsetHeight  (包括边线的宽);</div><div class="line">网页正文全文宽： document.body.scrollWidth;</div><div class="line">网页正文全文高： document.body.scrollHeight;</div><div class="line">网页被卷去的高： document.body.scrollTop;</div><div class="line">网页被卷去的左： document.body.scrollLeft;</div><div class="line">网页正文部分上： window.screenTop;</div><div class="line">网页正文部分左： window.screenLeft;</div><div class="line">屏幕分辨率的高： window.screen.height;</div><div class="line">屏幕分辨率的宽： window.screen.width;</div><div class="line">屏幕可用工作区高度： window.screen.availHeight;</div><div class="line">屏幕可用工作区宽度：window.screen.availWidth;</div></pre></td></tr></table></figure></p>
+<h2 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h2><p><img src="http://img.blog.csdn.net/20160625084926003" alt=""></p>
+</section>
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#js" >
+    <span class="tag-code">js</span>
+  </a>
+
+      </div>
+    
+    <!--
+    <div class="money-like">
+      <div class="reward-btn">
+        赏
+        <span class="money-code">
+          <span class="alipay-code">
+            <div class="code-image"></div>
+            <b>使用支付宝打赏</b>
+          </span>
+          <span class="wechat-code">
+            <div class="code-image"></div>
+            <b>使用微信打赏</b>
+          </span>
+        </span>
+      </div>
+      <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+    </div>
+     -->
+    <div class="qrcode">
+      <canvas id="share-qrcode"></canvas>
+      <p class="notice">扫描二维码，分享此文章</p>
+    </div>
+    
+      <div id="comments"></div>
+    
+  </article>
+</main>
+
+<script>
+  (function () {
+    var url = 'https://lirawx.github.io/2017/04/28/js/2017-04-28-jsanimation/';
+    var banner = 'undefined'
+    if (banner !== 'undefined') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "lirawx";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        id: "javascript特效（知识点笔记）",
+        owner: "lirawx",
+        repo: "blog",
+        oauth: {
+          client_id: "fbf58e21712e09b5f132",
+          client_secret: "ef1956862ff59fd6674c89519b74ee6d934b9b56"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2017 lirawx. <br> Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    |
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine == 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script>
+    var _baId = '9d96dd222ca2ed3fec333e0f5fa70590';
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?" + _baId;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script src="/js/script.js"></script>
+
+  </body>
+</html>
