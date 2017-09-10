@@ -18,15 +18,14 @@
   <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/plugins/gitment.css">
+<link rel="stylesheet" href="/css/plugins/share.min.css">
   <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
   <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
   <script src="/js/qrious.js"></script>
 <script src="/js/gitment.js"></script>
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png" />
-</div>
+
 
   <body>
     <header class="header fixed-header">
@@ -149,19 +148,23 @@
       </div>
       <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
     </div>
-     -->
+
     <div class="qrcode">
       <canvas id="share-qrcode"></canvas>
       <p class="notice">扫描二维码，分享此文章</p>
     </div>
+    -->
+    <div class="social-share" data-sites="weibo,qq,qzone,douban,twitter,google"></div>
+
     
       <div id="comments"></div>
     
   </article>
 </main>
-
+<script src="/js/share.min.js"></script>
 <script>
   (function () {
+  $('.social-share').share();
     var url = 'https://lirawx.me/2015/09/10/2015-09-10-xi-jin-du/';
     var banner = 'undefined'
     if (banner !== 'undefined') {
@@ -204,10 +207,10 @@
     })
 
     // qrcode
-    var qr = new QRious({
-      element: document.getElementById('share-qrcode'),
-      value: document.location.href
-    });
+    //var qr = new QRious({
+    //  element: document.getElementById('share-qrcode'),
+    //  value: document.location.href
+  //  });
 
     // gitment
     var gitmentConfig = "lirawx";
