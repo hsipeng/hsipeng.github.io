@@ -135,7 +135,7 @@
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2017/04/28/js/2017-04-28-scrollpercent/">javascript滑动条（程序代码）</a>
+        <a href="/2017/04/28/js/2017-04-28/">javascript导航特效（程序代码）</a>
       </h2>
       <p class="article-date">April 28, 2017</p>
       
@@ -147,10 +147,10 @@
       
       <div class="article-summary">
         
-          <p>拖拽效果的实现，主要是利用，鼠标按下不起来的事件中加入鼠标的移动事件来实现，<br>所以当鼠标按下的时候，记录位置，然后移动鼠标，改变位置，<br>window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();代码的作用清楚所选的内容<br>然后当鼠标弹起的时候，不做操作.</p>
+          <p>思路：当鼠标移动到某个li上的时候，就要改变云所在的位置，当鼠标离开的时候，云回到原来的位置，当鼠标点击的时候，云固定在当前的位置,而位置的获取，就是利用offsetLeft.  </p>
         
       </div>
-      <a class="more" href="/2017/04/28/js/2017-04-28-scrollpercent/">Read more</a>
+      <a class="more" href="/2017/04/28/js/2017-04-28/">Read more</a>
     </article>
   
     <article class="article-card">
@@ -175,7 +175,7 @@
   
     <article class="article-card">
       <h2 class="article-head">
-        <a href="/2017/04/28/js/2017-04-28/">javascript导航特效（程序代码）</a>
+        <a href="/2017/04/28/js/2017-04-28-scrollpercent/">javascript滑动条（程序代码）</a>
       </h2>
       <p class="article-date">April 28, 2017</p>
       
@@ -187,10 +187,10 @@
       
       <div class="article-summary">
         
-          <p>思路：当鼠标移动到某个li上的时候，就要改变云所在的位置，当鼠标离开的时候，云回到原来的位置，当鼠标点击的时候，云固定在当前的位置,而位置的获取，就是利用offsetLeft.  </p>
+          <p>拖拽效果的实现，主要是利用，鼠标按下不起来的事件中加入鼠标的移动事件来实现，<br>所以当鼠标按下的时候，记录位置，然后移动鼠标，改变位置，<br>window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();代码的作用清楚所选的内容<br>然后当鼠标弹起的时候，不做操作.</p>
         
       </div>
-      <a class="more" href="/2017/04/28/js/2017-04-28/">Read more</a>
+      <a class="more" href="/2017/04/28/js/2017-04-28-scrollpercent/">Read more</a>
     </article>
   
     <article class="article-card">
@@ -326,6 +326,22 @@
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
+
+
+<!-- GA part-->
+
+<script>
+  var UID = 'UA-80549073-1';
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', UID, 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 
 <script src="/js/script.js"></script>
 

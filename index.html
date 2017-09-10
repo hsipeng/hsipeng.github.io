@@ -167,6 +167,27 @@
   
     <article class="article-card">
       <h2 class="article-head">
+        <a href="/2017/05/20/diary/2017/05/20/Oracle 与 MySql 区别/">Oracle 与 MySql 区别(笔记)</a>
+      </h2>
+      <p class="article-date">May 20, 2017</p>
+      
+        
+  <a href="/tags#Oracle MySql" >
+    <span class="tag-code">Oracle MySql</span>
+  </a>
+
+      
+      <div class="article-summary">
+        
+          <h2 id="一、并发性"><a href="#一、并发性" class="headerlink" title="一、并发性"></a>一、并发性</h2><p>并发性是oltp数据库最重要的特性，但并发涉及到资源的获取、共享与锁定。</p>
+<p>mysql:<br>mysql以表级锁为主，对资源锁定的粒度很大，如果一个session对一个表加锁时间过长，会让其他session无法更新此表中的数据。<br>虽然InnoDB引擎的表可以用行级锁，但这个行级锁的机制依赖于表的索引，如果表没有索引，或者sql语句没有使用索引，那么仍然使用表级锁。<br>
+        
+      </div>
+      <a class="more" href="/2017/05/20/diary/2017/05/20/Oracle 与 MySql 区别/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
         <a href="/2017/05/20/diary/2017/05/20/java基础知识笔记(1)/">java基础知识笔记（1）</a>
       </h2>
       <p class="article-date">May 20, 2017</p>
@@ -218,27 +239,6 @@
         
       </div>
       <a class="more" href="/2017/05/20/diary/2017/05/20/java基础知识笔记(2)/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2017/05/20/diary/2017/05/20/Oracle 与 MySql 区别/">Oracle 与 MySql 区别(笔记)</a>
-      </h2>
-      <p class="article-date">May 20, 2017</p>
-      
-        
-  <a href="/tags#Oracle MySql" >
-    <span class="tag-code">Oracle MySql</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          <h2 id="一、并发性"><a href="#一、并发性" class="headerlink" title="一、并发性"></a>一、并发性</h2><p>并发性是oltp数据库最重要的特性，但并发涉及到资源的获取、共享与锁定。</p>
-<p>mysql:<br>mysql以表级锁为主，对资源锁定的粒度很大，如果一个session对一个表加锁时间过长，会让其他session无法更新此表中的数据。<br>虽然InnoDB引擎的表可以用行级锁，但这个行级锁的机制依赖于表的索引，如果表没有索引，或者sql语句没有使用索引，那么仍然使用表级锁。<br>
-        
-      </div>
-      <a class="more" href="/2017/05/20/diary/2017/05/20/Oracle 与 MySql 区别/">Read more</a>
     </article>
   
     <article class="article-card">
@@ -362,6 +362,22 @@
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
+
+
+<!-- GA part-->
+
+<script>
+  var UID = 'UA-80549073-1';
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', UID, 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 
 <script src="/js/script.js"></script>
 
