@@ -15,16 +15,20 @@ script:
   - hexo g
 
 after_script:
+  - cd ./public
   - git init
   - git config user.name "lirawx"
   - git config user.email "lira_wx@outlook.com"
   - git add .
   - git commit -m "Update posts"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" source:source
-  - cd ./public
-  - git add .
-  - git commit -m "Update posts"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - cd ..
+  - git init
+  - git config user.name "lirawx"
+  - git config user.email "lira_wx@outlook.com"
+  - git add .
+  - git commit -m "Update source"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" source:source
 # E: Build LifeCycle
 
 branches:
