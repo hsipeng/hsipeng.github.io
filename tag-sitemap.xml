@@ -37,14 +37,14 @@
     </url>
 
     <url>
-        <loc>https://lirawx.me/tags/%E6%83%85%E4%BA%BA%E8%8A%82/</loc>
+        <loc>https://lirawx.me/tags/tty/</loc>
         <lastmod>2017-09-09T10:13:38.570Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://lirawx.me/tags/tty/</loc>
+        <loc>https://lirawx.me/tags/%E6%83%85%E4%BA%BA%E8%8A%82/</loc>
         <lastmod>2017-09-09T10:13:38.570Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -177,14 +177,14 @@
     </url>
 
     <url>
-        <loc>https://lirawx.me/tags/%E5%88%9D%E8%A7%81/</loc>
+        <loc>https://lirawx.me/tags/%E6%81%A8/</loc>
         <lastmod>2017-09-09T10:13:38.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://lirawx.me/tags/%E6%81%A8/</loc>
+        <loc>https://lirawx.me/tags/%E5%88%9D%E8%A7%81/</loc>
         <lastmod>2017-09-09T10:13:38.591Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -298,6 +298,20 @@
     <url>
         <loc>https://lirawx.me/tags/axios-promise/</loc>
         <lastmod>2017-09-09T10:13:38.610Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://lirawx.me/tags/centos-lamp-cms/</loc>
+        <lastmod>2017-10-01T02:14:36.910Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://lirawx.me/tags/centos-php-openssl/</loc>
+        <lastmod>2017-10-01T02:22:24.318Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
