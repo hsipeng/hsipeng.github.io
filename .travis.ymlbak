@@ -8,22 +8,17 @@ install:
 
 #before_script:
  # - npm install -g gulp
-#node genmd.js
 
 script:
-  - node genmd.js
   - hexo g
 
 after_script:
+  - cd ./public
   - git init
   - git config user.name "lirawx"
   - git config user.email "lira_wx@outlook.com"
   - git add .
-  - git commit -m "Update posts"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" source:source
-  - cd ./public
-  - git add .
-  - git commit -m "Update posts"
+  - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 # E: Build LifeCycle
 
