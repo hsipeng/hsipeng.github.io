@@ -6,7 +6,11 @@ var options = {
     url: 'https://api.github.com/repos/lirawx/mirror/issues',
     headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36',
-        'Host':'api.github.com'
+        'Host':'api.github.com',
+        'DNT':'1',
+        'If-None-Match':'W/"074817d16634c58050520f5c85690abf"',
+        'Upgrade-Insecure-Requests':'1',
+        'Cache-Control':'0'
     }
 };
 
