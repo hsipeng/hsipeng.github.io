@@ -1,6 +1,6 @@
 author: lirawx. # 作者
 description: lirawx.'s blog
-keyword: just coding.
+keyword: life is short,let it be undefined;
 favicon:
 
 excerpt_link: Read more
@@ -17,10 +17,10 @@ highlight:
   tomorrow
 
 # gitment
-gitment_oauth_id: fbf58e21712e09b5f132
-gitment_oauth_secret: ef1956862ff59fd6674c89519b74ee6d934b9b56
+gitment_oauth_id: 2950d853073141b661e3
+gitment_oauth_secret: 2e07409146f34c725268ea45530c7a2d3364fe04
 gitment_owner: lirawx
-gitment_repo: blog
+gitment_repo: lirawx.github.io
 
 
 
@@ -35,4 +35,4 @@ google_ga_id: UA-80549073-1
 about:
   banner:
   avatar: https://avatars1.githubusercontent.com/u/10678334?v=4&u=932ea384b1c8a6136bf9a243dcf2f5867071164d&s=400
-  description: life is undefined.
+  description: life is short,let it be undefined;

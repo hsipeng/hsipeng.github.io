@@ -59,7 +59,7 @@ time_format: HH:mm:ss
 gitment_oauth_id: 2950d853073141b661e3
 gitment_oauth_secret: 2e07409146f34c725268ea45530c7a2d3364fe04
 gitment_owner: lirawx
-gitment_repo: blog
+gitment_repo: lirawx.github.io
 
 # Links
 weibo_username: lirawxcn
