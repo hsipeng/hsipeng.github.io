@@ -1,0 +1,38 @@
+author: lirawx. # 作者
+description: lirawx.'s blog
+keyword: just coding.
+favicon:
+
+excerpt_link: Read more
+
+menu:
+ Home: /
+ Tags: /tags/
+ Archives: /archives/
+ Projects: /project/
+ About: /about/
+
+# highlight
+highlight:
+  tomorrow
+
+# gitment
+gitment_oauth_id: fbf58e21712e09b5f132
+gitment_oauth_secret: ef1956862ff59fd6674c89519b74ee6d934b9b56
+gitment_owner: lirawx
+gitment_repo: blog
+
+
+
+
+# uyan
+# if you want to use uyan as your blog comment, plz remove/comment out gitment config
+
+# website track.
+baidu_id: 9d96dd222ca2ed3fec333e0f5fa70590
+google_ga_id: UA-80549073-1
+
+about:
+  banner:
+  avatar: https://avatars1.githubusercontent.com/u/10678334?v=4&u=932ea384b1c8a6136bf9a243dcf2f5867071164d&s=400
+  description: life is undefined.
