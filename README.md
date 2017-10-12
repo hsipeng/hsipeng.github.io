@@ -2,7 +2,7 @@
 
 ![](https://travis-ci.org/lirawx/lirawx.github.io.svg?branch=source)
 
-Life is short,let be undefined;
+Life is short,let it be undefined;
 
 ## 联系我
 
