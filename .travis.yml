@@ -22,12 +22,6 @@ after_script:
   - git add .
   - git commit -a -m "Update posts"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  - cd ..
-  - git config user.name "lirawx"
-  - git config user.email "lira_wx@outlook.com"
-  - git add .
-  - git commit -a -m "Update source"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" source:source
 # E: Build LifeCycle
 
 branches:
