@@ -11,7 +11,7 @@ date: 2017-12-02
 比较方便。
 <!-- more -->
 ## 程序截图
-
+![](https://github.com/lirawx/weapp/raw/master/dtools/weapp-screen-drivernews.gif)
 ## 功能介绍
 功能比较简单，基于脚手架[wafer2-quickstart-nodejs](https://github.com/tencentyun/wafer2-quickstart-nodejs)抽空业余时间写的一些代码，主要是新闻数据获取，我用node js 爬取的驱动之家的新闻
 新闻地址为[➡️](http://news.mydrivers.com/blog/) 这个地址的新闻每天都会更新。很实用，不多
