@@ -4,15 +4,19 @@
 
 # Site
 title: DVRAW.
-subtitle: let life = undefined;
-description: let life = undefined;
+subtitle: Life is short, let it be undefined;
+description: Life is short, let it be undefined;
+keywords: 爱搞事的boy
 author: lirawx
+email: i#lirawx.cn
+url: https://lirawx.me
 language: zh-Hans
 timezone:
 since: 2010
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://lirawx.me
+
+
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -67,6 +71,33 @@ twitter_username: lira_wx
 github_username: lirawx
 zhihu_username: lirawx
 
+##feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+
+
+#jsoncontent
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: true
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 
 ## web site track.
 ba_track_id: 9d96dd222ca2ed3fec333e0f5fa70590
@@ -83,8 +114,8 @@ sitemap:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-#theme: landscape
-theme: vexo
+#theme: landscape  vexo
+theme: indigo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
