@@ -2,8 +2,7 @@
 layout: post
 tags: maven profile
 title: maven profile切换
-date:2017-12-17
-
+date: 2017-12-17
 ---
 
 当用maven管理工程后，线上线下环境的切换就变得很有必要了，灵活切换有助于项目的开发和测试。

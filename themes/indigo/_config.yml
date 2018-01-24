@@ -26,6 +26,9 @@ menu:
   weibo:
     url: http://www.weibo.com/lirawxcn
     target: _blank
+  user-o:
+    text: Resume
+    url: /resume
   # link:
   #   text: 测试
   #   url: /custom

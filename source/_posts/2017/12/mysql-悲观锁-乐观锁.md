@@ -2,7 +2,7 @@
 layout: post
 tags: mysql 并发控制
 title: mysql 悲观锁和乐观锁
-date:2017-12-19
+date: 2017-12-19
 
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 tags: mysql docker
 title: docker 实现 mysql 的主从复制
-date:2017-12-19
+date: 2017-12-19
 
 ---
 

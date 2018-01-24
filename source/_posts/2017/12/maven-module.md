@@ -3,7 +3,6 @@ layout: post
 tags: maven modules
 title: maven 分模块工程
 date: 2017-12-17
-
 ---
 
 在平时的Javaweb项目开发中为了便于后期的维护，我们一般会进行分层开发，最常见的就是分为domain（域模型层）、dao（数据库访问层）、service（业务逻辑层）、web（表现层），这样分层之后，各个层之间的职责会比较明确，后期维护起来也相对比较容易，今天我们就是使用Maven来构建以上的各个层。每个层对应一个模块，这里domain层为model 包， web 层为controller层。
@@ -100,7 +99,7 @@ model 层
             <version>${project.version}</version>
         </dependency>
     </dependencies>
-      
+
 ```
 
 dao 层
