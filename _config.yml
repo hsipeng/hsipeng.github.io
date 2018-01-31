@@ -10,7 +10,7 @@ keywords: 爱搞事的boy
 author: lirawx
 email: i#lirawx.cn
 url: https://lirawx.me
-language: zh-Hans
+language: zh-CN
 timezone:
 since: 2010
 # URL
@@ -18,7 +18,8 @@ since: 2010
 
 
 root: /
-permalink: :year/:month/:day/:title/
+# permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -111,13 +112,30 @@ pagination_dir: page
 sitemap:
     path: sitemap.xml
 
+search:
+    path: search.xml
+    field: all
+
+baidu_url_submit:
+  count: 10 # 提交最新的链接数
+  host: lirawx.me # 在百度站长平台中注册的域名,虽然官方推荐要带有 www, 但可以不带.
+  token:  XXXXX # 你的秘钥,每个人都不一样,获取方法在下面
+  path: baidu_urls.txt # 文本文档的地址,新链接会保存在此文本文档里
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape  vexo
-theme: indigo
+theme: material
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+
+# deploy:
+# - type: baidu_url_submitter
+# - type: git
+#     repo:
+#       github: git@github.com:lirawx/lirawx.github.io.git
+#       coding:
 deploy:
   type: git
   repository: git@github.com:lirawx/lirawx.github.io.git

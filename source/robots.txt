@@ -1,8 +1,11 @@
----
-sitemap:
-  exclude: true
----
-# robotstxt.org/
-User-Agent: *
-Disallow:
-Sitemap: /sitemap.xml
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
