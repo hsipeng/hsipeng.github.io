@@ -1,0 +1,10 @@
+# 友情链接
+# Name:
+#     link: http://example.com
+#     avatar: http://example.com/avatar.png
+#     descr: "这是一个描述"
+
+coding:
+    link: http://coding.net
+    avatar: https://dn-coding-net-production-static.qbox.me/static/7a51352fa766f4176d7c4543339e0e98.png
+    descr: "coding."
