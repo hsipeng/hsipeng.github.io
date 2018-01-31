@@ -1,17 +1,18 @@
 language: node_js
-node_js: stable
-
+dist: trusty
+node_js:
+  - "7"
 # S: Build Lifecycle
 install:
+  - npm install hexo-cli -g
   - npm install
-
 
 #before_script:
  # - npm install -g gulp
 #node genmd.js
 
 script:
-  - node genmd.js
+#- node genmd.js
   - hexo g
 
 after_script:
