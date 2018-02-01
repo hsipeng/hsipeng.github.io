@@ -4,9 +4,9 @@
 
 # Head info
 head:
-    favicon: "/img/favicon.png"
-    high_res_favicon: "/img/favicon.png"
-    apple_touch_icon: "/img/favicon.png"
+    favicon: "/favicon.ico"
+    high_res_favicon: "/favicon.ico"
+    apple_touch_icon: "/favicon.ico"
     keywords: lirawx,github,blog,it,simple
     site_verification:
         google:
@@ -212,13 +212,17 @@ sidebar:
             link: "/tags"
             icon: cloud_circle
             divider: true
-        Timeline:
+        时间轴:
             link: "/timeline"
             icon: send
             divider: false
-        Gallery:
+        相册:
             link: "/gallery"
             icon: photo_library
+            divider: false
+        简历:
+            link: "https://lirawx.coding.me"
+            icon: user-o
             divider: false
     article_num:
         use: true
