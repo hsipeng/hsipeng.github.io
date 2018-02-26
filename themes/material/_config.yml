@@ -18,7 +18,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: "/atom.xml"
     daily_pic: "#"
     logo: "#"
 
@@ -28,8 +28,8 @@ url:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Paradox
-scheme: Isolation
+scheme: Paradox
+#scheme: Isolation
 
 # UI & UX: slogan, color, effect
 uiux:
@@ -45,7 +45,7 @@ uiux:
 # JS Effect Switches
 js_effect:
     fade: true
-    smoothscroll: false
+    smoothscroll: true
 
 # Reading experience
 reading:
@@ -66,7 +66,7 @@ background:
     #bgimg: "/img/bg.png"
     bing:
         enable: false
-        parameter:
+        parameter: new | color=blue | type=T
 
 # Images Settings
 img:
@@ -89,7 +89,7 @@ img:
 #          to /source/data/head.yml as custom code, to load custom font files.
 fonts:
     family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-    use: google
+    use: ustc
     custom_font_host:
 
 # Card Elevation Level
@@ -104,7 +104,7 @@ copyright_since: 2015
 # You can specify the text you want to show in footer, HTML tag is supported.
 #   For example, you can setup ICP license number as:
 #       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
-footer_text: '<a href="https://lirawx.cn" rel="nofollow">@lirawx.</a>'
+footer_text: '<a href="https://github.com/lirawx" rel="nofollow">@lirawx.</a>'
 
 # Qrcode for redirect at other device
 #    use: choose which method to generate the qrcode for each posts.
@@ -132,8 +132,8 @@ prettify:
 #                    - If `includeDefaultColors` is true, this will append colors to the color pool
 #                    - If `includeDefaultColors` is false, this will instead default color pool
 hanabi:
-    enable: true
-    line_number: true
+    enable: false
+    line_number: false
     includeDefaultColors: true
     customColors:
 
@@ -142,7 +142,7 @@ hanabi:
 #   For example, you can setup a CC license as:
 #       'This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 3.0 Unported License</a>'
 # You can also use Front-Matter `license` to override this setting.
-license:
+license: '<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可。'
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -153,22 +153,22 @@ license:
 toc:
 #   use: choose whether the line_number of toc will show or not.
 #       Available value of "linenumber": true | false
-    linenumber: true
+    linenumber: false
 
 # SNS Menu
 sns:
     email: i#lirawx.cn
     facebook:
-    twitter:
+    twitter: "https://twitter.com/lira_wx"
     googleplus:
-    weibo:
+    weibo: "https://weibo.com/lirawxcn"
     instagram:
     tumblr:
     github: "https://github.com/lirawx"
     linkedin:
     zhihu:
-    bilibili:
-    telegram:
+    bilibili: "https://space.bilibili.com/2892906/#/"
+    telegram: "https://t.me/DVRAW"
     v2ex:
 
 # SNS Share Switch
@@ -178,8 +178,8 @@ sns_share:
     googleplus: true
     weibo: true
     linkedin: false
-    qq: false
-    telegram: false
+    qq: true
+    telegram: true
 
 # Sidebar Customize
 sidebar:
@@ -196,7 +196,7 @@ sidebar:
         icon: inbox
         divider: false
     categories:
-        use: true
+        use: false
         icon: chrome_reader_mode
         divider: false
     tags:
@@ -220,13 +220,17 @@ sidebar:
             link: "/gallery"
             icon: photo_library
             divider: false
+        笔记:
+            link: "https://github.com/lirawx/note/issues"
+            icon: edit
+            divider: false
         简历:
             link: "https://lirawx.coding.me"
-            icon: user-o
-            divider: false
+            icon: chrome_reader_mode
+            divider: true
     article_num:
         use: true
-        divider: true
+        divider: false
     footer:
         divider: true
         theme: true
@@ -314,14 +318,14 @@ vendors:
 #   For example
 #       jquery: https://cdn.bootcss.com/jquery/2.2.1/jquery.js
     # jQuery 2.2.0
-    jquery:
+    jquery: https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js
     # nprogress 0.2.0
-    nprogress:
+    nprogress: https://cdn.bootcss.com/nprogress/0.2.0/nprogress.js
     # FontAwesome 4.5.0
-    fontawesome:
+    fontawesome: https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css
     # MathJax 2.7.0-2.7.1
-    mathjax:
+    mathjax: https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js
     # Prettify r298 (only prettify.js)
-    prettify:
+    prettify: https://cdn.bootcss.com/prettify/r298/prettify.min.js
     # Material Icons 3.0.1
-    material_icons:
+    material_icons: https://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css
