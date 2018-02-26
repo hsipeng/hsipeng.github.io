@@ -2,7 +2,7 @@
 layout: post
 tags: vue vuex vue-router
 title: vue vuex vue-router 项目搭建
-date: date
+date: 2017-11-01
 
 ---
 
