@@ -8,7 +8,12 @@
 # 这是一个描述 为图片描述。
 
 
-logo:
-    full_link: https://avatars1.githubusercontent.com/u/10678334?v=4&u=932ea384b1c8a6136bf9a243dcf2f5867071164d&s=400
-    thumb_link: https://avatars1.githubusercontent.com/u/10678334?v=4&u=932ea384b1c8a6136bf9a243dcf2f5867071164d&s=400
-    descr: "logo"
+扬州:
+    full_link: https://github.com/lirawx/lirawx.github.io/blob/master/gallery/photos/yangzhou-big.jpg
+    thumb_link: https://github.com/lirawx/lirawx.github.io/blob/master/gallery/photos/yangzhou-min.jpg
+    descr: "淮左名都,竹西佳处."
+
+无锡:
+    full_link: https://github.com/lirawx/lirawx.github.io/blob/master/gallery/photos/wuxi-big.jpg
+    thumb_link: https://github.com/lirawx/lirawx.github.io/blob/master/gallery/photos/wuxi-min.jpg
+    descr: "阿拉都是吴C您."
