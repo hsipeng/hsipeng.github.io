@@ -5,12 +5,12 @@
 # Head info
 head:
     favicon: "/favicon.ico"
-    high_res_favicon: "/favicon.ico"
-    apple_touch_icon: "/favicon.ico"
+    high_res_favicon: "/favicon/favicon128x128.ico"
+    apple_touch_icon: ""/favicon/icon.png"
     keywords: lirawx,github,blog,it,simple
     site_verification:
         google:
-        baidu:
+        baidu: J9sH45I3o5
 
     # Enable generate structured-data as JSON+LD for SEO or not.
     #    Set as 'false' if it cause some wrong when `hexo g`.
