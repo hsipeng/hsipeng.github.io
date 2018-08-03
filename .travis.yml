@@ -22,7 +22,11 @@ after_script:
   - git config user.email "lira_wx@outlook.com"
   - git add .
   - git commit -a -m "Update posts"
+  # Github
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  # Coding Pages
+  - git config user.email "lirawx@qq.com"
+  - git push --force --quiet "https://lirawx:${CO_TOKEN}@${CO_REF}" master:master
 # E: Build LifeCycle
 
 branches:
@@ -31,3 +35,4 @@ branches:
 env:
  global:
    - GH_REF: github.com/lirawx/lirawx.github.io.git
+   - CO_REF: git.coding.net/lirawx/blog.git
