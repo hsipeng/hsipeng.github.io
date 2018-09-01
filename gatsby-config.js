@@ -4,7 +4,7 @@ module.exports = {
     title: 'Blog by Lirawx.',
     subtitle: 'Life is short, let it be undefined.',
     copyright: '© 2018 All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'lirawx',
     menu: [
       {
         label: 'Articles',
