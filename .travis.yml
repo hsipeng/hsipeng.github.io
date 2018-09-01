@@ -6,22 +6,21 @@ node_js:
 notifications:
   email:
     recipients:
-      - lirawx@qq.com
+      - lira_wx@outlook.com
     on_success: change # default: change
     on_failure: always # default: always
 
 # S: Build Lifecycle
 install:
-  - npm install hexo-cli -g
-  - npm install
+  - npm install gatsby-cli yarn -g
+  - yarn
 
 #before_script:
  # - npm install -g gulp
 #node genmd.js
 
 script:
-#- node genmd.js
-  - hexo g
+  - yarn build
 
 after_script:
   - cd ./public
