@@ -24,6 +24,7 @@ script:
 
 after_script:
   - cd ./public
+  - echo "lirawx.me" > CNAME
   - git init
   - git config user.name "lirawx"
   - git config user.email "lira_wx@outlook.com"
