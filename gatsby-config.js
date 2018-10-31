@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     url: 'https://lirawx.me',
-    title: 'Blog by Lirawx.',
+    title: 'ALEX P . X - lirawx.me',
     subtitle: 'Life is short, let it be undefined.',
     copyright: '© 2018 All rights reserved.',
     disqusShortname: 'lirawx',
