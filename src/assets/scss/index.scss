@@ -231,6 +231,16 @@ body:before {
   background-size: cover, cover;
   background-attachment: scroll;
   background-color: #FFFFFF;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 body:after {
@@ -447,7 +457,11 @@ body.is-loading #main {
 
 #image01 img {
   width: 7rem;
+  border: 1px;
+  border-style: solid;
   border-radius: 100%;
+  border-color: rgba(105, 79, 246, 0.502);
+  -webkit-animation: hue 60s infinite linear;
 }
 
 h1 br+br,

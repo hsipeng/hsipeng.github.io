@@ -9,19 +9,19 @@ module.exports = {
       {
         label: 'Articles',
         path: '/'
-      },
-      {
-        label: 'Tags',
-        path: '/tags/'
-      },
-      {
-        label: 'Categories',
-        path: '/categories/'
-      },
-      {
-        label: 'About me',
-        path: '/about/'
       }
+      // {
+      //   label: 'Tags',
+      //   path: '/tags/'
+      // },
+      // {
+      //   label: 'Categories',
+      //   path: '/categories/'
+      // },
+      // {
+      //   label: 'About me',
+      //   path: '/about/'
+      // }
     ],
     author: {
       name: 'Lirawx.',
