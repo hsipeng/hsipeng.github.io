@@ -34,7 +34,7 @@ class IndexRoute extends React.Component {
                     alt="Alex"
                   />
                 </div>
-                <h1 id="text01">Alex P . X</h1>
+                <h1 id="text01">X. Pearson</h1>
                 <hr id="divider01" />
                 <p id="text02">
                   Web Engineer in <a href="#">Nan jing</a>, passionate about high performance
