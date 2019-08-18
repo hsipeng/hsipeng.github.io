@@ -1,0 +1,2 @@
+webpackJsonp([30875753179511],{386:function(t,e){t.exports={data:{site:{siteMetadata:{title:"ALEX P . X - lirawx.me",subtitle:"Life is short, let it be undefined.",copyright:"© 2018 All rights reserved.",menu:[{label:"Articles",path:"/"}],author:{name:"Lirawx.",email:"i#lirawx.cn",telegram:"",twitter:"lira_wx",github:"lirawx",rss:"",vk:""}}},allMarkdownRemark:{group:[{fieldValue:"Javascript",totalCount:3},{fieldValue:"python",totalCount:1}]}},pathContext:{}}}});
+//# sourceMappingURL=path---categories-4fe5b6f731117a1260b9.js.map

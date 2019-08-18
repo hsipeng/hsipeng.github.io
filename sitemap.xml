@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://lirawx.me/posts/How-to-deploy-npm-package/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/npm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/web-development/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/categories/javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/posts/welcome-to-webpack4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/webpack/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/posts/React-Server-Rendering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/react/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/ssr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/posts/set-up-python-dev-environment/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/environment/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/categories/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lirawx.me/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
