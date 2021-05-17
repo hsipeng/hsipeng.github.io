@@ -1,18 +1,17 @@
 {
-  "name": "lirawx",
+  "name": "hsipeng.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "airtable": "^0.7.1",
-    "marked": "^0.3.6",
-    "pug": "^2.0.0-beta6"
+    "airtable": "^0.11.0",
+    "marked": "^2.0.3",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.5",
-    "gulp": "^3.9.1",
-    "gulp-pug": "^3.2.0",
-    "marked": "^0.3.6"
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
   },
   "scripts": {
     "dev": "gulp dev",
@@ -22,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lirawx/lirawx.github.io.git"
+    "url": "git+https://github.com/hsipeng/hsipeng.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lirawx/lirawx.github.io/issues"
+    "url": "https://github.com/hsipeng/hsipeng.github.io/issues"
   },
-  "homepage": "https://github.com/lirawx/lirawx.github.io#readme"
+  "homepage": "https://github.com/hsipeng/hsipeng.github.io#readme"
 }

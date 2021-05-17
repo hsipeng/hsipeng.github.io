@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta(charset='utf-8')
-    title @lirawx
+    title @hsipeng
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
     link(rel='stylesheet', href='style.css')
   body
@@ -14,15 +14,14 @@ html
         article
           ul.stories
             li.story
-              .date ABOUT
               .content 
                 h1 Hsi P'eng
                 h2 熙
                 p
                   a.social-link(href='/resume') 简历
-                  a.social-link(href='https://twitter.com/lirawx') Twitter
-                  a.social-link(href='https://github.com/lirawx') GitHub
-                  a.social-link(href='mailto:i@lirawx.cn') Mail
+                  a.social-link(href='https://twitter.com/hsi_peng') Twitter
+                  a.social-link(href='https://github.com/hsipeng') GitHub
+                  a.social-link(href='mailto:hsi.peng@outlook.com') Mail
                 blockquote
                   p Life is short; Let it be undefined;
             each story in stories
@@ -31,18 +30,18 @@ html
                 .content!=story.content
       section#footer
         p Copyright &copy; 2016 
-          a(href='https://lirawx.me') Lirawx.
+          a(href='http://hsipeng.github.io') hsipeng.
           span - All rights reserved. Hosted by  
           a(href="https://github.com", style="font-weight: bold;") Github.
     a.comments#comment-button
       .popup 点击留言
-      img.boat(src='img/LIRAWX.png')
+      span.boat Hsi' Peng.
     .cover.done.comments-box#comment-box
       h1 留言
       .close [×]
       script(
         src='https://utteranc.es/client.js',
-        repo="lirawx/lirawx.github.io"
+        repo="hsipeng/hsipeng.github.io"
         issue-term="pathname"
         label="✨💬✨"
         theme="github-light"

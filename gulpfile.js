@@ -80,29 +80,29 @@ gulp.task('resume', function() {
 })
 
 
-gulp.task('dev', ['index', 'resume'], () => {
+gulp.task('dev', gulp.series('index', 'resume', () => {
     browserSync.init({
         server: {
             baseDir: './'
         }
     })
-    gulp.watch(['src/*', 'style.css'], ['index', 'resume'])
-})
+    gulp.watch(['src/*', 'style.css'], gulp.series('index', 'resume'))
+}))
 
-gulp.task('dev:resume', ['resume'], () => {
+gulp.task('dev:resume', gulp.series('resume', () => {
     browserSync.init({
         server: {
             baseDir: './'
         }
     })
-    gulp.watch(['src/*', 'style.css'], ['resume'])
-})
+    gulp.watch(['src/*', 'style.css'], gulp.series('resume'))
+}))
 
-gulp.task('dev:index', ['index'], () => {
+gulp.task('dev:index', gulp.series('index', () => {
     browserSync.init({
         server: {
             baseDir: './'
         }
     })
-    gulp.watch(['src/*', 'style.css'], ['index'])
-})
+    gulp.watch(['src/*', 'style.css'], gulp.series('index'))
+}))
