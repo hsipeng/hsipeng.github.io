@@ -3,13 +3,13 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - gh-page
 
 env:
   GIT_USER: hsipeng
   GIT_EMAIL: hsi.peng@outlook.com
   DEPLOY_REPO: hsipeng/hsipeng.github.io
-  DEPLOY_BRANCH: master
+  DEPLOY_BRANCH: gh-page
 
 jobs:
   build:
