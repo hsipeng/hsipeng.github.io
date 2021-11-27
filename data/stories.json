@@ -1,6 +1,11 @@
 {
     "stories": [
         {
+            "date": "08/28/2020",
+            "content": "进入[字节跳动](https://www.bytedance.com)上海，担任 商业化版权 前端工程师， 从事版权以及工具相关业务线",
+            "highlight": true
+        },
+        {
             "date": "04/13/2018",
             "content": "进入[苏宁](https://www.suning.com)徐庄总部，供应商以及商户平台担任 前端工程师， 从事大数据可视化相关业务",
             "highlight": true
